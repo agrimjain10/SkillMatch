@@ -4,6 +4,12 @@ SkillMatch is a Flutter-based campus collaboration platform designed to help stu
 
 Built with Flutter and Supabase, the app combines profile-driven discovery, real-time collaboration flows, project participation, lightweight gamification, and an admin layer for moderation and system oversight.
 
+## Design Preview
+
+The current app is aligned against a Stitch design exploration for the same product direction.
+
+![SkillMatch Stitch Preview](assets/readme/stitch-design-preview.png)
+
 ## Highlights
 
 - Mutual-match based networking
