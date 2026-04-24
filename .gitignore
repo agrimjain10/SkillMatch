@@ -1,6 +1,10 @@
 # Miscellaneous
 *.class
 *.log
+analysis_*.txt
+final_*.txt
+fresh_*.txt
+flutter_run_*.log
 *.pyc
 *.swp
 .DS_Store
@@ -32,6 +36,7 @@ migrate_working_dir/
 .pub/
 /build/
 /coverage/
+skillmatch_app.iml
 
 # Symbolication related
 app.*.symbols
