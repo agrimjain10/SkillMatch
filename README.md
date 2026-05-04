@@ -4,6 +4,15 @@ SkillMatch is a Flutter-based campus collaboration platform designed to help stu
 
 Built with Flutter and Supabase, the app combines profile-driven discovery, real-time collaboration flows, project participation, lightweight gamification, and an admin layer for moderation and system oversight.
 
+## At a Glance
+
+- Flutter + Supabase campus collaboration app
+- Mutual-match networking with gated chat
+- Project discovery and collaboration requests
+- Gamification through streaks, badges, and skill assessments
+- Admin tooling for visibility and system actions
+- Web-first development workflow with Android support
+
 ## Design Preview
 
 The current app is aligned against a Stitch design exploration for the same product direction.
@@ -19,6 +28,16 @@ The current app is aligned against a Stitch design exploration for the same prod
 - Badges, streaks, skill assessments, and leaderboard
 - Admin dashboard and moderation entry points
 - Web-first testing flow with Android support
+
+## Product Overview
+
+SkillMatch is positioned as a practical student collaboration network rather than a static social profile app. The core experience is designed around:
+
+- discoverability through skills and roles
+- intentional connections through reciprocal matching
+- structured collaboration through project workflows
+- ongoing engagement through streaks, badges, and assessments
+- operational control through an admin surface
 
 ## Core User Flows
 
@@ -58,6 +77,18 @@ The current app is aligned against a Stitch design exploration for the same prod
 - **Storage:** Supabase Storage
 - **Auth:** Supabase OTP Authentication
 
+## Feature Map
+
+| Area | Current Scope |
+| --- | --- |
+| Auth | OTP email login, onboarding, profile completion |
+| Discovery | Profile browse, search, match intent |
+| Chat | Mutual-match gated messaging |
+| Projects | Create, inspect, roadmap, engage |
+| Profile | Edit profile, upload photo, skill display |
+| Gamification | Streaks, badges, leaderboard, evaluations |
+| Admin | Metrics, action entry points, admin-only access |
+
 ## Project Structure
 
 ```text
@@ -90,6 +121,14 @@ flutter run -d chrome
 flutter run -d web-server --web-hostname 127.0.0.1 --web-port 8085
 ```
 
+### Useful dev commands
+
+```bash
+flutter analyze
+flutter test
+flutter build web --debug
+```
+
 ## Supabase Setup
 
 Run the SQL below in the Supabase SQL editor:
@@ -109,13 +148,11 @@ This script is intended to:
 
 ## Validation
 
-Typical verification commands:
+Typical validation during active development:
 
-```bash
-flutter analyze
-flutter test
-flutter build web --debug
-```
+- `flutter analyze`
+- `flutter test`
+- `flutter build web --debug`
 
 ## Android Build
 
@@ -140,6 +177,14 @@ The app currently includes working implementations or fallbacks for:
 
 Some features are intentionally resilient to partial backend setup, but the full experience depends on running the provided Supabase SQL successfully.
 
+## Deployment Note
+
+The repository contains the active app workspace and schema repair SQL, but production-grade release management still requires:
+
+- a proper Android signing setup
+- finalized Supabase schema migration strategy
+- environment separation for staging and production
+
 ## Repository Notes
 
 - Generated logs and local analysis artifacts are ignored from version control.
@@ -148,7 +193,7 @@ Some features are intentionally resilient to partial backend setup, but the full
 ## Roadmap
 
 - production-grade release signing
-- polished README visuals and screenshots
+- richer README visuals and screenshots
 - cleaner Supabase migrations split by concern
 - richer evaluation games and interactive flows
 - stronger admin moderation tooling
